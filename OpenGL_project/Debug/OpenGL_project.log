@@ -1,8 +1,8 @@
 ﻿  main.cpp
-c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\generator.hpp(156): warning C4244: "argument": konwersja z "unsigned int" do "GLfloat", możliwa utrata danych
-c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\generator.hpp(165): warning C4244: "argument": konwersja z "unsigned int" do "GLfloat", możliwa utrata danych
-c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\generator.hpp(177): warning C4244: "argument": konwersja z "unsigned int" do "GLfloat", możliwa utrata danych
-c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\generator.hpp(186): warning C4244: "argument": konwersja z "unsigned int" do "GLfloat", możliwa utrata danych
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\generator.hpp(150): warning C4244: "argument": konwersja z "unsigned int" do "GLfloat", możliwa utrata danych
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\generator.hpp(158): warning C4244: "argument": konwersja z "unsigned int" do "GLfloat", możliwa utrata danych
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\generator.hpp(169): warning C4244: "argument": konwersja z "unsigned int" do "GLfloat", możliwa utrata danych
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\generator.hpp(178): warning C4244: "argument": konwersja z "unsigned int" do "GLfloat", możliwa utrata danych
 c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\main.cpp(130): warning C4305: "argument": obcięcie z "double" do "GLfloat"
 c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\main.cpp(141): warning C4305: "argument": obcięcie z "double" do "GLfloat"
 c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\main.cpp(143): warning C4305: "argument": obcięcie z "double" do "GLfloat"
