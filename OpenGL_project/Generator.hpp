@@ -591,8 +591,6 @@ public:
 		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
 		Walls[2].rotate(270, glm::vec3(0, 1, 0));
 		Walls[2].translate(glm::vec3(2 * radius, radius / 2 * 3 + height, 0));
-		//Walls[1].rotate(90, glm::vec3(0, 1, 0));
-		//Walls[1].translate(glm::vec3(0, 0, -radius / 3 * 1));
 		Walls[2].rotate(90, glm::vec3(1, 0, 0));
 		Walls[2].scale(glm::vec3(radius / 14, radius / 4 * 3, 1));
 	}
@@ -629,7 +627,6 @@ public:
 		door.push_back(Polygon(4, doorText, 0.0f, ourShader));
 		door[0].init();
 
-		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
 		door[0].rotate(270, glm::vec3(0, 1, 0));
 		door[0].translate(glm::vec3(2 * radius+radius/6*sqrt(2), radius / 4 * 3, 0));
 		door[0].rotate(90, glm::vec3(0, 1, 0));
@@ -663,7 +660,6 @@ public:
 		windows.push_back(Polygon(4, windowText, 0.0f, ourShader));
 		windows[0].init();
 
-		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
 		windows[0].rotate(270, glm::vec3(0, 1, 0));
 		windows[0].translate(glm::vec3(2 * radius, radius / 2 * 1+2*radius/2*3, 0));
 		windows[0].rotate(90, glm::vec3(0, 1, 0));
@@ -675,7 +671,6 @@ public:
 		windows.push_back(Polygon(4, windowText, 0.0f, ourShader));
 		windows[1].init();
 
-		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
 		windows[1].rotate(315, glm::vec3(0, 1, 0));
 		windows[1].translate(glm::vec3(sqrt(2) * 3 / 2 * radius, radius / 2 * 1 + radius / 2 * 3, 0));
 		windows[1].rotate(90, glm::vec3(0, 1, 0));
@@ -686,7 +681,7 @@ public:
 		windows.push_back(Polygon(4, windowText, 0.0f, ourShader));
 		windows[2].init();
 
-		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
+		
 		windows[2].rotate(315, glm::vec3(0, 1, 0));
 		windows[2].translate(glm::vec3(sqrt(2) * 3 / 2 * radius, radius / 2 * 1 + 3 * radius / 2 * 3, 0));
 		windows[2].rotate(90, glm::vec3(0, 1, 0));
@@ -697,7 +692,7 @@ public:
 		windows.push_back(Polygon(4, windowText, 0.0f, ourShader));
 		windows[3].init();
 
-		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
+		
 		windows[3].rotate(225, glm::vec3(0, 1, 0));
 		windows[3].translate(glm::vec3(sqrt(2) * 3 / 2 * radius, radius / 2 * 1 + 4 * radius / 2 * 3, 0));
 		windows[3].rotate(90, glm::vec3(0, 1, 0));
