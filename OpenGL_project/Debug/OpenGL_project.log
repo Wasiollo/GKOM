@@ -1,0 +1,27 @@
+﻿  gl_05.cpp
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\generator.hpp(156): warning C4244: "argument": konwersja z "unsigned int" do "GLfloat", możliwa utrata danych
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\generator.hpp(165): warning C4244: "argument": konwersja z "unsigned int" do "GLfloat", możliwa utrata danych
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\generator.hpp(177): warning C4244: "argument": konwersja z "unsigned int" do "GLfloat", możliwa utrata danych
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\generator.hpp(187): warning C4244: "argument": konwersja z "unsigned int" do "GLfloat", możliwa utrata danych
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(128): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(139): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(141): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(143): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(145): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(147): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(160): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(170): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(172): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(174): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(176): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(178): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(191): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(199): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(202): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+c:\users\mateusz\desktop\gkom-gl\gkom-gl\opengl_project\gl_05.cpp(205): warning C4305: "argument": obcięcie z "double" do "GLfloat"
+  soil.lib(SOIL.obj) : znaleziono moduł .netmodule MSIL lub moduł skompilowany z opcją /GL; konsolidowanie zostanie rozpoczęte ponownie z opcją /LTCG; dodaj opcję /LTCG do wiersza polecenia konsolidacji w celu podwyższenia wydajności konsolidatora
+LINK : warning LNK4075: zignorowano opcjŕ ä/INCREMENTALö z powodu okreťlenia opcji ä/LTCGö
+  Trwa generowanie kodu
+  Zako˝czono generowanie kodu
+  OpenGL_project.vcxproj -> C:\Users\Mateusz\Desktop\gkom-gl\gkom-gl\Debug\OpenGL_project.exe
+  OpenGL_project.vcxproj -> C:\Users\Mateusz\Desktop\gkom-gl\gkom-gl\Debug\OpenGL_project.pdb (Partial PDB)
