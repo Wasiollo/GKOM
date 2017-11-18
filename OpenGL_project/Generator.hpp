@@ -609,3 +609,108 @@ public:
 	}
 
 };
+
+
+class Door {
+public:
+	GLfloat height;
+	GLfloat radius;
+	Shader ourShader;
+	Texture doorText;
+
+	std::vector<Polygon> door;
+
+	Door(GLfloat height_, GLfloat radius_, Texture & doorText_, Shader ourShader_) :
+		height(height_),
+		radius(radius_),
+		doorText(doorText_),
+		ourShader(ourShader_) {}
+	void init() {
+		door.push_back(Polygon(4, doorText, 0.0f, ourShader));
+		door[0].init();
+
+		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
+		door[0].rotate(270, glm::vec3(0, 1, 0));
+		door[0].translate(glm::vec3(2 * radius+radius/6*sqrt(2), radius / 4 * 3, 0));
+		door[0].rotate(90, glm::vec3(0, 1, 0));
+		door[0].translate(glm::vec3(-radius / 6, 0, 0));
+		door[0].rotate(-45, glm::vec3(0, 1, 0));
+		door[0].scale(glm::vec3(radius / 3, radius / 4 * 3, 1));
+	}
+
+
+	void draw() {
+			door[0].draw();
+	}
+};
+
+
+class Window {
+public:
+	GLfloat height;
+	GLfloat radius;
+	Shader ourShader;
+	Texture windowText;
+
+	std::vector<Polygon> windows;
+
+	Window(GLfloat height_, GLfloat radius_, Texture & windowText_, Shader ourShader_) :
+		height(height_),
+		radius(radius_),
+		windowText(windowText_),
+		ourShader(ourShader_) {}
+	void init() {
+		windows.push_back(Polygon(4, windowText, 0.0f, ourShader));
+		windows[0].init();
+
+		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
+		windows[0].rotate(270, glm::vec3(0, 1, 0));
+		windows[0].translate(glm::vec3(2 * radius, radius / 2 * 1+2*radius/2*3, 0));
+		windows[0].rotate(90, glm::vec3(0, 1, 0));
+		windows[0].translate(glm::vec3(-radius / 3, 0, 0));
+		
+		windows[0].scale(glm::vec3(radius / 5, radius / 8 * 3, 1));
+
+
+		windows.push_back(Polygon(4, windowText, 0.0f, ourShader));
+		windows[1].init();
+
+		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
+		windows[1].rotate(315, glm::vec3(0, 1, 0));
+		windows[1].translate(glm::vec3(sqrt(2) * 3 / 2 * radius, radius / 2 * 1 + radius / 2 * 3, 0));
+		windows[1].rotate(90, glm::vec3(0, 1, 0));
+		windows[1].translate(glm::vec3(-radius / 3, 0, 0));
+
+		windows[1].scale(glm::vec3(radius / 5, radius / 8 * 3, 1));
+
+		windows.push_back(Polygon(4, windowText, 0.0f, ourShader));
+		windows[2].init();
+
+		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
+		windows[2].rotate(315, glm::vec3(0, 1, 0));
+		windows[2].translate(glm::vec3(sqrt(2) * 3 / 2 * radius, radius / 2 * 1 + 3 * radius / 2 * 3, 0));
+		windows[2].rotate(90, glm::vec3(0, 1, 0));
+		windows[2].translate(glm::vec3(radius / 3, 0, 0));
+
+		windows[2].scale(glm::vec3(radius / 5, radius / 8 * 3, 1));
+
+		windows.push_back(Polygon(4, windowText, 0.0f, ourShader));
+		windows[3].init();
+
+		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
+		windows[3].rotate(225, glm::vec3(0, 1, 0));
+		windows[3].translate(glm::vec3(sqrt(2) * 3 / 2 * radius, radius / 2 * 1 + 4 * radius / 2 * 3, 0));
+		windows[3].rotate(90, glm::vec3(0, 1, 0));
+		windows[3].translate(glm::vec3(radius / 6, 0, 0));
+
+		windows[3].scale(glm::vec3(radius / 5, radius / 8 * 3, 1));
+			}
+
+
+	void draw() {
+		windows[0].draw();
+		windows[1].draw();
+		windows[2].draw();
+		windows[3].draw();
+	}
+};
