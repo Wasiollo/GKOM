@@ -183,7 +183,6 @@ public:
 			horizontalBoard.push_back(Polygon(2, woodText, 0.0f, ourShader));
 			horizontalBoard[i + 1].init();
 
-			//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
 			horizontalBoard[i + 1].rotate(45 + 45 * i, glm::vec3(0, 1, 0));
 			horizontalBoard[i + 1].translate(glm::vec3(sqrt(2) * 3 / 2 * radius, radius * 6 / 4 + radius / 2 * 3 * number, 0));
 			horizontalBoard[i + 1].rotate(90, glm::vec3(1, 0, 0));
@@ -254,7 +253,6 @@ public:
 		shovel.push_back(Polygon(4, roofWoodText, 0.0f, ourShader));
 		shovel[0].init();
 		
-		//shovel[0].rotate(90, glm::vec3(0, 1, 0));
 		shovel[0].translate(glm::vec3(0, radius / 2 * 3 * height, radius*2.2+width));
 		shovel[0].rotate(45, glm::vec3(0, 0, 1));
 		shovel[0].scale(glm::vec3(radius * 4, radius / 3, 1));
@@ -262,7 +260,6 @@ public:
 		shovel.push_back(Polygon(4, roofWoodText, 0.0f, ourShader));
 		shovel[1].init();
 
-		//shovel[1].rotate(90, glm::vec3(0, 1, 0));
 		shovel[1].translate(glm::vec3(0, radius / 2 * 3 * height, radius*2.21+width));
 		shovel[1].rotate(-45, glm::vec3(0, 0, 1));
 		shovel[1].scale(glm::vec3(radius * 4, radius / 3, 1));
@@ -393,7 +390,7 @@ public:
 			quernQuad[i].rotate(-90, glm::vec3(0, 1, 0));
 			quernQuad[i].translate(glm::vec3(-2 * radius,-( height + radius / 2), 0));
 			quernQuad[i].rotate(angle, glm::vec3(0, 1, 0));
-			//quernQuad[i].rotate(45 * (GLfloat)i, glm::vec3(0, 1, 0));
+
 			quernQuad[i].translate(glm::vec3(2 * radius, height + radius / 2, 0));
 			quernQuad[i].rotate(90, glm::vec3(0, 1, 0));
 			quernQuad[i].scale(glm::vec3(radius, radius / 2, 1));
@@ -402,7 +399,7 @@ public:
 			quernQuad[i + 1].rotate(-90, glm::vec3(0, 1, 0));
 			quernQuad[i + 1].translate(glm::vec3(-(sqrt(2) * 3 / 2 * radius),-( height + radius / 2), 0));
 			quernQuad[i+1].rotate(angle, glm::vec3(0, 1, 0));
-			//quernQuad[i + 1].rotate(45 + 45 * (GLfloat)i, glm::vec3(0, 1, 0));
+
 			quernQuad[i + 1].translate(glm::vec3(sqrt(2) * 3 / 2 * radius, height + radius / 2, 0));
 			quernQuad[i + 1].rotate(90, glm::vec3(0, 1, 0));
 			quernQuad[i + 1].scale(glm::vec3(radius / 2 * sqrt(2), radius / 2, 1));
@@ -412,13 +409,11 @@ public:
 
 	void draw()
 	{
-		//for (unsigned i = 0; i < 4; ++i)
-		//{
 			quernOct[0].draw();
 			quernOct[1].draw();
 			for (unsigned i = 0; i < 8;++i)
 				quernQuad[i].draw();
-		//}
+		
 	}
 };
 
@@ -492,7 +487,6 @@ public:
 			quernQuad[i].rotate(-90, glm::vec3(0, 1, 0));
 			quernQuad[i].translate(glm::vec3(-radius/10, -(height + radius *10), 0));
 			quernQuad[i].rotate(angle, glm::vec3(0, 1, 0));
-			//quernQuad[i].rotate(45 * (GLfloat)i, glm::vec3(0, 1, 0));
 			quernQuad[i].translate(glm::vec3(radius/10, height + radius * 10, 0));
 			quernQuad[i].rotate(90, glm::vec3(0, 1, 0));
 			quernQuad[i].scale(glm::vec3(radius/10, radius * 10, 1));
@@ -553,7 +547,6 @@ public:
 	Texture woodText;
 	
 	std::vector<Polygon> Walls;
-	//std::vector<Polygon> nextfloors;
 
 	Gate(GLfloat height_, GLfloat radius_, Texture& brickText_, Texture & woodText_, Shader ourShader_) :
 		height(height_),
@@ -566,10 +559,8 @@ public:
 		Walls.push_back(Polygon(4, brickText, 0.0f, ourShader));
 		Walls[0].init();
 
-		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
 		Walls[0].rotate(270, glm::vec3(0, 1, 0));
 		Walls[0].translate(glm::vec3(2 * radius, radius / 4 * 3 + height, 0));
-		//Walls[0].rotate(90, glm::vec3(0, 1, 0));
 		Walls[0].translate(glm::vec3(0, 0, radius / 3 * 1));
 		Walls[0].rotate(-9, glm::vec3(0, 1, 0));
 		Walls[0].scale(glm::vec3(radius / 14, radius / 4 * 3, 1));
@@ -577,10 +568,8 @@ public:
 		Walls.push_back(Polygon(4, brickText, 0.0f, ourShader));
 		Walls[1].init();
 
-		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
 		Walls[1].rotate(270, glm::vec3(0, 1, 0));
 		Walls[1].translate(glm::vec3(2 * radius, radius / 4 * 3 + height, 0));
-		//Walls[1].rotate(90, glm::vec3(0, 1, 0));
 		Walls[1].translate(glm::vec3(0, 0, -radius / 3 * 1));
 		Walls[1].rotate(9, glm::vec3(0, 1, 0));
 		Walls[1].scale(glm::vec3(radius / 14, radius / 4 * 3, 1));
@@ -588,7 +577,6 @@ public:
 		Walls.push_back(Polygon(4, woodText, 0.0f, ourShader));
 		Walls[2].init();
 
-		//bottomFloorWalls[i].translate(glm::vec3(20, 5.0f*i+5.0, 0));
 		Walls[2].rotate(270, glm::vec3(0, 1, 0));
 		Walls[2].translate(glm::vec3(2 * radius, radius / 2 * 3 + height, 0));
 		Walls[2].rotate(90, glm::vec3(1, 0, 0));
