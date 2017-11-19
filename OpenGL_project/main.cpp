@@ -118,6 +118,7 @@ int main()
 	Texture pathText("path.png");
 	Texture doorText("door3.png");
 	Texture windowText("window.png");
+	Texture ledderText("ledder.png");
 	//create grass
 	Polygon grass(grassVs, 6, grassText, 0.2f, ourShader);
 	grass.init();
@@ -155,6 +156,8 @@ int main()
 	Roof roof(4, 7, woodRoofText, ourShader);
 	roof.init();
 
+	Floor floor(5, 7, oldWoodText,ledderText, ourShader);
+	floor.init();
 
 
 	//added
@@ -316,6 +319,7 @@ int main()
 		door.draw();
 		window1.draw();
 		window2.draw();
+		floor.draw();
 
 		woodquer.draw();
 		woodquer.rotate(1);

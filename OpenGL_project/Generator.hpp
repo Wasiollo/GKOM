@@ -28,6 +28,8 @@ public:
 		octangulars[0].translate(glm::vec3(0, height, 0));
 		octangulars[0].rotate(90, glm::vec3(1, 0, 0));
 		octangulars[0].scale(glm::vec3(radius, radius, 1));
+
+
 		
 			for (unsigned i = 0; i < 3; ++i) {
 				bottomFloorWalls.push_back(Polygon(4, brickText, 0.0f, ourShader));
@@ -663,7 +665,7 @@ public:
 
 		
 		windows[2].rotate(315, glm::vec3(0, 1, 0));
-		windows[2].translate(glm::vec3(sqrt(2) * 3 / 2 * radius, radius / 2 * 1 + 3 * radius / 2 * 3, 0));
+		windows[2].translate(glm::vec3(sqrt(2) * 3 / 2 * radius, radius + 3 * radius / 2 * 3, 0));
 		windows[2].rotate(90, glm::vec3(0, 1, 0));
 		windows[2].translate(glm::vec3(radius / 3, 0, 0));
 
@@ -688,4 +690,47 @@ public:
 		windows[2].draw();
 		windows[3].draw();
 	}
+};
+
+
+class Floor{
+public:
+	GLfloat height;
+	GLfloat radius;
+	Shader ourShader;
+	Texture oldWoodText;
+	Texture ledderText;
+	std::vector<Polygon> floor;
+	std::vector<Polygon> ledder;
+
+	Floor(GLfloat height_, GLfloat radius_, Texture & oldWoodText_, Texture& ledderText_, Shader ourShader_) :
+		height(height_),
+		radius(radius_),
+		oldWoodText(oldWoodText_),
+		ledderText(ledderText_),
+		ourShader(ourShader_) {}
+	void init() {
+
+		floor.push_back(Polygon(10, oldWoodText, 0.0f, ourShader));
+		
+		floor[0].init();
+		floor[0].rotate(90, glm::vec3(0, 1, 0));
+		floor[0].translate(glm::vec3(0, radius / 2 * 9, 0));
+		floor[0].rotate(90, glm::vec3(1, 0, 0));
+		floor[0].scale(glm::vec3(radius, radius, 1));
+
+		ledder.push_back(Polygon(4, ledderText, 0.0f, ourShader));
+		ledder[0].init();
+		ledder[0].rotate(90, glm::vec3(0, 1, 0));
+		ledder[0].translate(glm::vec3(radius, radius / 2 * 5, 0));
+		ledder[0].rotate(-45, glm::vec3(0, 1, 0));
+		ledder[0].scale(glm::vec3(radius/7, radius*2.5, 1));
+	}
+
+
+	void draw() {
+		floor[0].draw();
+		ledder[0].draw();
+	}
+
 };
